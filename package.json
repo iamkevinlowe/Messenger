@@ -4,13 +4,11 @@
   "private": true,
   "scripts": {
     "start": "react-native start",
-    "test": "mocha --require react-native-mock/mock.js --compilers js:babel-core/register --recursive App/**/__tests__/*.test.js"
+    "test": "mocha --opts test/mocha.opts",
+    "tdd": "mocha -w --opts test/mocha.opts"
   },
   "babel": {
-    "presets": [
-      "react-native",
-      "stage-0"
-    ]
+    "presets": ["react-native"]
   },
   "dependencies": {
     "babel-eslint": "^6.0.0",
@@ -29,7 +27,6 @@
     "babel-core": "^6.7.2",
     "babel-polyfill": "^6.7.4",
     "babel-preset-react-native": "^1.5.2",
-    "babel-preset-stage-0": "^6.5.0",
     "chai": "^3.5.0",
     "enzyme": "^2.1.0",
     "react": "^0.14.8",

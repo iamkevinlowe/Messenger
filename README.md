@@ -8,10 +8,10 @@ This is a project with the sole purpose of being a side hustle.
 
 ## Issues/Feature Requests
 
-- Github will be the platform to [report issues](https://github.com/bdougie/BlocMessenger/issues/new) and bugs (*PRs are welcomed).
+- GitHub will be the platform to [report issues](https://github.com/bdougie/BlocMessenger/issues/new) and bugs (*PRs are welcomed).
 - Feature can be requested through the [Github Issue creation](https://github.com/bdougie/BlocMessenger/issues/new) as well.
-- Please do not report bugs through the Bloc Platform reporting tools or Phabricator, as this is not a sanctioned Bloc app and will not be maintained during regualr develop time. 
-- Feel free to reach to the repo owner for questions
+- Please do not report bugs through the Bloc Platform reporting tools or Phabricator, use GitHub instead. 
+- Feel free to reach to the repo @bdougie for questions
 
 
 ## Setup
@@ -36,9 +36,15 @@ Then
 ![sample image](http://i.imgur.com/xVetwhwm.png)
 ## Tests
 
-Testing is only limited to Unit tests for now
+Testing is only limited to Unit tests for now. Consider reading the
+  [enzyme](http://airbnb.io/enzyme/docs/api/shallow.html) documentation
+  for reference.
 
-`$ npm test`
+```
+$ npm test
+$ npm run tdd // for test watcher
+```
+
 
 ## Linting
 
